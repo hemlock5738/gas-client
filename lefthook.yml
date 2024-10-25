@@ -1,0 +1,15 @@
+pre-commit:
+  piped: true
+  commands:
+    sort:
+      priority: 1
+      stage_fixed: true
+      glob: '*.json'
+      run: npx jsonsort {staged_files}
+    check:
+      priority: 2
+      stage_fixed: true
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: npx @biomejs/biome check --write --unsafe --no-errors-on-unmatched {staged_files}
+
+rc: ~/.lefthookrc
