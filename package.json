@@ -26,14 +26,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.17",
     "@types/uuid": "^10.0.0",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.25.2",
     "jsdom": "^26.0.0",
-    "json-sort-cli": "^4.0.4",
-    "lefthook": "^1.11.2",
+    "json-sort-cli": "^4.0.9",
+    "lefthook": "^1.11.6",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.7"
+    "vitest": "^3.1.1"
   },
   "volta": {
     "node": "22.8.0"
